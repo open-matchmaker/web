@@ -78,7 +78,7 @@ button {
   text-align: center;
   padding: 15px 40px;
   margin-top: 5px;
-  background-color: #b08bf8;
+  background-color: #38a69d;
   color: #fff;
   font-size: 14px;
   margin-left: auto;
@@ -255,7 +255,7 @@ input:focus {
   height: auto;
   min-height: 100%;
   position: relative;
-  background-image: url("https://images.pexels.com/photos/114979/pexels-photo-114979.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background: #38a69d;
   background-size: cover;
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
