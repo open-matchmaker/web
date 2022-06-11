@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,39 +8,51 @@
         <link href="styles.css" rel="stylesheet">
         <title>Cadastro</title>
       </head>
-      <body>
-        <div class="sessionPerfil">
-          <div class="left">
-            <style type="text/css">
-              .st01{fill: #34495e;}
-            </style>
-          </div>
-          <form action="" autocomplete="off"> 
-            <h4>Seus dados cadastrados</h4>
-            <div class="floating-label">
-              <input placeholder="Nome" type="nome" name="nome" id="nome" autocomplete="off">
-              <label for="nome">Nome:</label>
-              <div class="icon">
-                <object data="user.svg" width="300" height="300"> </object>
-              </div>
-            </div>
-            <div class="floating-label">
-              <input placeholder="Email" type="email" name="email" id="email" autocomplete="off">
-              <label for="email">Email:</label>
-              <div class="icon">
-                <object data="email.svg" width="300" height="300"> </object>
-              </div>
-            </div>
-            <div class="floating-label">
-              <input placeholder="Password" type="password" name="password" id="password" autocomplete="off">
-              <label for="password">Password:</label>
-              <div class="icon">
-                <object data="password.svg" width="300" height="300"> </object>
-              </div>
-            </div>
-              <button type="submit" onClick="return false;">Atualizar</button>
-              <a href="https://codepen.io/elujambio/pen/yjwzGP" class="discrete" target="_blank"></a>
+
+<body>
+    <div class="box">
+        <div class="img-box">
+            <img src="perfil.jpeg">
+        </div>
+        <div class="form-box">
+            <h2>Seu perfil</h2>
+            <form action="#">
+                <div class="input-group">
+                    <label for="nome"> Nome Completo</label>
+                    <!--<input type="text" id="nome" placeholder="Digite o seu nome completo" required> -->
+                    <p>Fulano de tal</p>
+                </div>
+                <div class="input-group">
+                    <label for="email">E-mail</label>
+                    <!-- <input type="email" id="email" placeholder="Digite o seu email" required> -->
+                    <p>fulanodetal@gmail.com</p>
+                </div>
+                <div class="input-group">
+                    <label for="telefone">Telefone</label>
+                    <!-- <input type="tel" id="telefone" placeholder="Digite o seu telefone" required> -->
+                    <p>(99)99999-9999</p>
+                </div>
+                <div class="input-group w50">
+                    <label for="senha">Senha</label>
+                    <!--  <input type="password" id="senha" placeholder="Digite sua senha" required> -->
+                    <p>*************</p>
+                </div>
+                <div class="input-group w50">
+                    <label for="Biografia">Biografia</label>
+                    <!--  <input type="password" id="senha" placeholder="Digite sua senha" required> -->
+                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                </div>
+                <div class="input-group w50">
+                    <label for="">Seus jogos</label>
+                    <!--  <input type="password" id="senha" placeholder="Digite sua senha" required> -->
+                    <p>Jogo 1, jogo 2, jogo 3</p>
+                </div>
+
+                <div class="input-group">
+                    <button>Atualizar</button>
+                </div>
             </form>
         </div>
-      </body>
+    </div>
+</body>
 </html>
