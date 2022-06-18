@@ -1,0 +1,57 @@
+.header{
+    display: flex;
+    flex-direction: row;
+    background-color: #38a69d;
+}
+
+nav {
+	margin: 27px auto 0;
+	
+	width: 590px;
+	height: 50px;
+	background-color: #38a69d;
+	border-radius: 8px;
+	font-size: 0;
+    
+}
+nav a {
+	height: 100%;
+	font-size: 15px;
+	display: inline-block;
+	position: relative;
+	z-index: 1;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+	color: white;
+	cursor: pointer;
+
+}
+nav a:hover{
+    background-color: #34495e;
+    border-radius: 8px;
+}
+
+a:nth-child(1) {
+	width: 20%;
+}
+a:nth-child(2) {
+	width: 20%;
+}
+a:nth-child(3) {
+	width: 20%;
+}
+a:nth-child(4) {
+	width: 20%;
+}
+a:nth-child(5){
+    width: 20%;
+}
+.logo{
+    width: 25%;
+    justify-self: flex-start;
+}
+.routes{
+    width: 75%;
+    align-items: center;
+}
