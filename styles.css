@@ -4,15 +4,6 @@
   margin: 0;
 }
 
-html, body {
-  height: 100vh;
-  width: 100vw;
-  margin: 0 0;
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  background: #f3f2f2;
-}
 
 h4 {
   font-size: 24px;
@@ -21,22 +12,17 @@ h4 {
   opacity: 0.85;
 }
 
-label {
-  font-size: 12.5px;
-  color: #34495e;
-  opacity: 0.8;
-  font-weight: 400;
-}
-
 form {
   padding: 40px 30px;
   background: #fefefe;
-  display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding-bottom: 1%;
-  width: 50%;
+  width: auto;
+  justify-content: center;
+  align-self: center;
 }
+
 form h4 {
   margin-bottom: 2%;
   color: rgba(0, 0, 0, 0.5);
@@ -88,6 +74,7 @@ button {
   transition: all 0.3s ease;
   outline: 0;
 }
+
 button:hover {
   transform: translateY(-3px);
   box-shadow: 0 2px 6px -1px rgba(182, 157, 230, 0.65);
@@ -161,37 +148,14 @@ input:focus {
 
 
 .session {
+  margin-top: 15%;
   display: flex;
-  flex-direction: row;
-  width: auto;
-  height: auto;
-  margin: auto auto;
+  justify-content: center;
   background: #ffffff;
   border-radius: 4px;
   box-shadow: 0px 2px 6px -1px rgba(0, 0, 0, 0.12);
 }
 
-.sessionPerfil {
-  display: flex;
-  flex-direction: row;
-  width: auto;
-  height: auto;
-  margin: auto auto;
-  background:#34495e;
-  border-radius: 4px;
-  box-shadow: 0px 2px 6px -1px rgba(0, 0, 0, 0.12);
-}
-
-.sessionG {
-  display: flex;
-  flex-direction: row;
-  width: 30%;
-  height: 70%;
-  margin: auto auto;
-  background: #ffffff;
-  border-radius: 9px;
-  box-shadow: 0px 2px 6px -1px rgba(0, 0, 0, 0.12);
-}
 .left {
   width: 40px;
   height: auto;
@@ -217,196 +181,10 @@ a.discrete:hover {
   border-bottom: solid 1px rgba(0, 0, 0, 0.2);
 }
 
-.base{
-  display: flex;
-  flex-direction:column;
-  text-align: center;
-  width: 100%;
-  height: 100%;
-}
-
-.bodyHome {
-	font-size: 12px;
-	background: #38a69d;
-}
-
-.bodyHome h1 {
-  height: 8%;
-	text-align: center;
-	font-size: 60px;
-  font-weight: 500;
-	color: #ecf0f1;
-  background-color: #34495e;
-  margin-bottom: 2%;
-}
-
-.bodyHome p {
-  position: absolute;
-  bottom: 20px;
-  width: 100%;
-  text-align: center;
-  color: #ecf0f1;
-  font-size: 16px;
-}
-
 span {
   color: #2BD6B4;
 }
 
-nav {
-	margin: 27px auto 0;
-	position: relative;
-	width: 590px;
-	height: 50px;
-	background-color: #38a69d;
-	border-radius: 8px;
-	font-size: 0;
-}
-nav a {
-	line-height: 50px;
-	height: 100%;
-	font-size: 15px;
-	display: inline-block;
-	position: relative;
-	z-index: 1;
-	text-decoration: none;
-	text-transform: uppercase;
-	text-align: center;
-	color: white;
-	cursor: pointer;
-}
-nav .animation {
-	position: absolute;
-	height: 100%;
-	top: 0;
-	z-index: 0;
-	transition: all .5s ease 0s;
-	border-radius: 8px;
-}
-a:nth-child(1) {
-	width: 20%;
-}
-a:nth-child(2) {
-	width: 20%;
-}
-a:nth-child(3) {
-	width: 30%;
-}
-a:nth-child(4) {
-	width: 30%;
-}
-nav .start-home, a:nth-child(1):hover~.animation {
-	width: 20%;
-	left: 0%;
-	background-color: #34495e;;
-}
-nav .start-about, a:nth-child(2):hover~.animation {
-	width: 20%;
-	left: 20%;
-	background-color: #34495e;
-}
-nav .start-blog, a:nth-child(3):hover~.animation {
-	width: 30%;
-	left: 40%;
-	background-color: #34495e;
-}
-nav .start-portefolio, a:nth-child(4):hover~.animation {
-	width: 30%;
-	left: 70%;
-	background-color: #34495e;;
-}
-
-body{
-    background-image: url(background.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    min-height: 100vh;
-}
-.w50{
-  width: 50%;
-  float: left;
-  padding-right: 15px;
-}
-.box{
-  display: flex;
-  width: 930px;
-}
-.img-box{
-  background-color:#38a69d;
-  width: 30%;
-  height: 50%;
-  display: flex;
-  align-items: center;
-  padding: 2%;
-  border-radius: 20px  0 0 20px;
-}
-.img-box img{
-  height: 50%;
-  width: 100%;
-}
-.form-box{
-  background-color: rgba(255, 255, 255, 0.4);
-  backdrop-filter: blur(40px);
-  padding: 30px 40px;
-  width: 50%;
-  height: 80%;
-  border-radius: 0 20px 20px 0;
-}
-.form-box h2{
-  font-size: 30px;
-}
-.form-box p{
-  font-weight: bold;
-  color: #3D3D3D;
-}
-.form-box p a{
-  color: #38a69d;
-  text-decoration: none;
-}
-.form-box form{
-  margin: 2% 0%;
-}
-form .input-group{
-  padding-bottom: 1%;
-}
-form .input-group label{
-  color: #3D3D3D;
-  font-weight: bold;
-  display: block;
-  padding-bottom: 1%;
-}
-form .input-group input{
-  width: 100%;
-  height: 3%;
-  background-color: rgba(255, 255, 255, 0.32);
-  border-radius: 20px;
-  outline: none;
-  border: 2px solid transparent;
-  padding: 2%;
-  font-size: 15px;
-  color: #616161;
-  transition: all 0.4s ease;
-}
-form .input-group input:focus{
-  border-color:#38a69d;
-}
-form .input-group button{
-  width: 100%;
-  height: 47px;
-  background: #38a69d;
-  border-radius: 20px;
-  outline: none;
-  border: none;
-  margin-top: 15px;
-  color: white;
-  cursor: pointer;
-  font-size: 16px;
-}
 @media (max-width:930px) {
   .img-box{
       display: none;
@@ -424,86 +202,4 @@ form .input-group button{
       width: 100%;
       padding: 0;
   }
-}
-
-.form-box-checkbox{
-  background-color: rgba(255, 255, 255, 0.4);
-  backdrop-filter: blur(40px);
-  padding: 40px 40px;
-  width: 50%;
-  border-radius: 0 20px 20px 0;
-}
-.wrapper {
-  padding: 30px;
-}
-
-.form-group {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin-bottom: 15px;
-}
-
-.form-group label {
-  padding-left: 10px;
-  cursor: pointer;
-}
-
-.radio, .checkbox {
-  cursor: pointer;
-  appearance: none;
-  width: 40px;
-  height: 30px;
-  border: 3px solid turquoise;
-  border-radius: 50%;
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  outline: none;
-}
-
-.checkbox {
-  border-radius: 0;
-}
-
-.radio:before, .checkbox:before {
-  content: '';
-  width: 15px;
-  height: 15px;
-  background: turquoise;
-  border-radius: 50%;
-  opacity: 0;
-  transition: all 600ms ease-in-out;
-  position: absolute;
-}
-
-.checkbox:before {
-  border-radius: 0;
-  background: transparent;
-  border: 4px solid turquoise;
-  border-left: 0;
-  border-top: 0;
-  width: 7px;
-  height: 12px;
-  transform: rotate(45deg);
-  top: 2px;
-}
-
-.radio:checked:before, .checkbox:checked:before {
-  opacity: 1;
-}
-
-.radio:focus, .checkbox:focus {
-  box-shadow: 0 0 5px turquoise;
-}
-.forms{
-  align-items: center;
-  width: 30%;
-  height: 40%;
-  width: 25%;
-  height: 50%;
-  margin-top: 15%;
-  padding: 0px 0px;
 }
