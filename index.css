@@ -6,7 +6,7 @@
 
 nav {
 	margin: 27px auto 0;
-	
+	display: flex;
 	width: 590px;
 	height: 50px;
 	background-color: #38a69d;
