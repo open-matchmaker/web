@@ -24,14 +24,16 @@ p {
 }
 
 .timeline {
+    display: flex;
+    flex-direction: column;
     position: relative;
-    padding-left: 4rem;
-    margin: 0 0 0 30px;
+    align-items: center;
     color: white;
 }
 
 .timeline-container {
     position: relative;
+    width: 80%;
     margin-bottom: 2.5rem;
 }
 
