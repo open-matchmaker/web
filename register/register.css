@@ -1,5 +1,6 @@
 * {
-  font-family: 'K2D', sans-serif;
+  font-family: 'Cherry Swash', cursive;
+  ;
   font-weight: 300;
   margin: 0;
 }
@@ -27,10 +28,12 @@ form h4 {
   margin-bottom: 2%;
   color: rgba(0, 0, 0, 0.5);
 }
+
 form h4 span {
   color: #34495e;
   font-weight: 700;
 }
+
 form p {
   line-height: 155%;
   margin-bottom: 1%;
@@ -52,6 +55,7 @@ a.discrete {
   transition: all 0.3s ease;
   margin-top: 40px;
 }
+
 a.discrete:hover {
   border-bottom: solid 1px rgba(0, 0, 0, 0.2);
 }
@@ -79,6 +83,7 @@ button:hover {
   transform: translateY(-3px);
   box-shadow: 0 2px 6px -1px rgba(182, 157, 230, 0.65);
 }
+
 button:hover:active {
   transform: scale(0.99);
 }
@@ -97,6 +102,7 @@ input {
   font-weight: 400;
   -webkit-appearance: none;
 }
+
 input:focus {
   border-bottom: solid 1px #38a69d;
   outline: 0;
@@ -114,6 +120,7 @@ input:focus {
   margin-bottom: 10px;
   width: 100%;
 }
+
 .floating-label label {
   position: absolute;
   top: calc(50% - 7px);
@@ -122,11 +129,13 @@ input:focus {
   transition: all 0.3s ease;
   padding-left: 44px;
 }
+
 .floating-label input {
   width: calc(100% - 44px);
   margin-left: auto;
   display: flex;
 }
+
 .floating-label .icon {
   position: absolute;
   top: 0;
@@ -136,6 +145,7 @@ input:focus {
   display: flex;
   margin-top: 5%;
 }
+
 .floating-label-user .iconFhoto {
   position: absolute;
   top: 0;
@@ -177,6 +187,7 @@ a.discrete {
   transition: all 0.3s ease;
   margin-top: 40px;
 }
+
 a.discrete:hover {
   border-bottom: solid 1px rgba(0, 0, 0, 0.2);
 }
@@ -186,20 +197,23 @@ span {
 }
 
 @media (max-width:930px) {
-  .img-box{
-      display: none;
+  .img-box {
+    display: none;
   }
-  .box{
-      width: 700px;
+
+  .box {
+    width: 700px;
   }
-  .form-box{
-      width: 100%;
-      border-radius: 20px;
+
+  .form-box {
+    width: 100%;
+    border-radius: 20px;
   }
 }
+
 @media (max-width:500px) {
-  .w50{
-      width: 100%;
-      padding: 0;
+  .w50 {
+    width: 100%;
+    padding: 0;
   }
 }
