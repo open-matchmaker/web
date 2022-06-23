@@ -5,8 +5,53 @@
     <title>Comunidade</title>
     <link href="../index.css" rel="stylesheet">
     <link href="community.css" rel="stylesheet">
+
+
+
   </head>
 <body>
+    <script>
+        function addPost(){
+            var input = document.getElementById("userPost").value;
+            if (input===''){
+                alert("Por favor, preencha o campo de postagem");
+                return;
+            }
+
+
+            var postContainer = document.createElement("div");
+            postContainer.className = "timeline-container";
+            
+            var postBody = document.createElement("div");
+            postBody.className = "timeline-body";
+
+            var postTitle = document.createElement("h4");
+            postTitle.className = "timeline-title";
+
+            var userName = document.createElement("span");
+            userName.className = "badge";
+            userName.innerHTML = 'Arthur';
+
+
+            var postText = document.createElement("p");
+            postText.innerHTML = input;
+            
+            var postDate = document.createElement("p");
+            postDate.className = "timeline-subtitle";
+            postDate.innerHTML = 'Agora';
+
+            postTitle.appendChild(userName);
+            postBody.appendChild(postTitle);
+            postBody.appendChild(postText);
+            postBody.appendChild(postDate);
+            postContainer.appendChild(postBody);
+
+            document.getElementsByClassName("timeline")[0].appendChild(postContainer);
+
+
+            document.getElementById("userPost").value = "";
+        }
+    </script>
   <div class='header'>
         <div class="logo">
             <h1>Matchmaker</h1>
@@ -23,36 +68,32 @@
     </div>
     <body>
         <div class="container">
+            <input type="text" id=userPost class="form-field" placeholder="Fazer novo Post">
+            <button class='enter' onclick="addPost()">Enviar</button>
             <div class="timeline">
-                <div class="timeline-container primary">
+                <div class="timeline-container">
                     <div class="timeline-body">
                         <h4 class="timeline-title"><span class="badge">Anni</span></h4>
                         <p>Boa tarde</p>
-                        <p class="timeline-subtitle">1 Hours Ago</p>
+                        <p class="timeline-subtitle">1 Dia Atrás</p>
                     </div>
                 </div>
-                <div class="timeline-container danger">
-                    <div class="timeline-body">
-                        <h4 class="timeline-title"><span class="badge">Arthur</span></h4>
-                        <p>Boa tarde</p>
-                        <p class="timeline-subtitle">2 Hours Ago</p>
-                    </div>
-                </div>
-                <div class="timeline-container success">
+                <div class="timeline-container">
                     <div class="timeline-body">
                         <h4 class="timeline-title"><span class="badge">Hans</span></h4>
                         <p>oi</p>
-                        <p class="timeline-subtitle">7 Hours Ago</p>
+                        <p class="timeline-subtitle">7 Horas Atrás</p>
                     </div>
                 </div>
-                <div class="timeline-container warning">
+                <div class="timeline-container">
                     <div class="timeline-body">
                         <h4 class="timeline-title"><span class="badge">Pará</span></h4>
                         <p>Olá</p>
-                        <p class="timeline-subtitle">1 Day Ago</p>
+                        <p class="timeline-subtitle">1 Dia Atrás</p>
                     </div>
                 </div>
             </div>
+
         </div>
     </body>
 </body>
