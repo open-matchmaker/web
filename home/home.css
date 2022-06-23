@@ -31,7 +31,7 @@
     flex-wrap: wrap;
     font-size: 1.2em;
     min-height: 230px;
-    background-color: #e3e3e3;
+    background-color: #1e1e2f;
     padding: 20px;
     border-radius: 20px;
   }
@@ -40,11 +40,13 @@
     text-align: center;
     font-weight: bold;
     font-size:1.6em;
+    color: white;
   }
   
   .content-text {
     font-size:1.15em;
     padding-top: 40px;
+    color: white;
   }
   
   /* section.info {

@@ -1,10 +1,13 @@
 * {
+  margin: 0;
+  padding: 0;
   font-family: 'K2D', sans-serif;
   font-weight: 300;
-  margin: 0;
+  box-sizing: border-box;
 }
 
-body{
+
+.all{
   margin-top:20px;
   color: #1a202c;
   text-align: left;
@@ -19,7 +22,6 @@ body{
 
 .card {
   position: relative;
-  display: flex;
   flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
