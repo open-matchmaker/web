@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'K2D',sans-serif;
   }
   
   html, body {
@@ -82,7 +83,7 @@
   .about-text {
     color: white;
     font-size: 15px;
-    font-weight: bold;
+    /* font-weight: bold; */
   }
   
   .image {
