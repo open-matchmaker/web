@@ -5,10 +5,8 @@
     <title>Comunidades</title>
     <link href="../index.css" rel="stylesheet">
     <link href="community.css" rel="stylesheet">
-
-
-
   </head>
+
 <body>
     <script>
         function addPost(){
@@ -51,6 +49,60 @@
 
             document.getElementById("userPost").value = "";
         }
+
+        function generateTitle(){
+            var title = localStorage.getItem("title");
+            document.getElementById("title").innerHTML = title;
+            console.log(title);
+            const pic = document.getElementById('pageTitle')
+            switch(title.trim()){
+                case "League of Legends":
+                    pic.style.backgroundImage = "url('../assets/img/league.jpg')";
+                    break;
+                case "Valorant":
+                    pic.style.backgroundImage = "url('../assets/img/valorant.jpg')";
+                    break;
+                case "CS:GO":
+                    pic.style.backgroundImage = "url('../assets/img/cs.jpg')";
+                    break;
+                case "Apex Legends":
+                    pic.style.backgroundImage = "url('../assets/img/apex.jpg')";
+                    break;
+                case "Dota 2":
+                    pic.style.backgroundImage = "url('../assets/img/dota.jpg')";
+                    break;
+                case "Overwatch":
+                    pic.style.backgroundImage = "url('../assets/img/ow.jpg')";
+                    // pic.style.color = 'black';
+                    break;
+                default:
+                    alert("Erro ao carregar a página");
+                    break;
+            }
+            pic.style.backgroundSize = 'cover';
+            pic.style.backgroundPosition = 'center';
+
+            let followers = Math.floor(Math.random() * 50000);
+            document.getElementById("followers").innerHTML = followers;
+        }
+
+        function addFollower(){
+            var followButton = document.getElementById("follow");
+            var followers = document.getElementById("followers").innerHTML;
+            followers = parseInt(followers);
+            if(followButton.innerHTML === "Seguir"){
+                followButton.innerHTML = "Seguindo";
+                followers++;
+                document.getElementById("followers").innerHTML = followers;
+           
+            }else{
+                followButton.innerHTML = "Seguir";
+                followers--;
+                document.getElementById("followers").innerHTML = followers;
+            }
+            
+        }
+
     </script>
   <div class='header'>
         <div class="logo">
@@ -60,13 +112,24 @@
             <nav>
                 <a href="../home/home.html">Home</a>
                 <a href="../perfil/perfil.html">Perfil</a>
-                <a href="../community/community.html">Comunidades</a>
+                <a href="../communitySelect/communitySelect.html">Comunidades</a>
                 <a href="../login/login.html">Login</a>
                 <a href="../register/register.html">Cadastro</a>
             </nav>
         </div>
     </div>
-    <body>
+    <body onload="generateTitle()">
+        <div class="pageTitle" id="pageTitle">
+            <h1 id="title"></h1>
+            <div class="info">
+                <div>
+                    <p>Seguidores: <span id="followers"> </span></p>
+                </div>
+                <div>
+                    <button id="follow" onclick="addFollower()">Seguir</button>
+                </div>
+            </div>
+        </div>
         <div class="container">
             <input type="text" id=userPost class="form-field" placeholder="Fazer novo Post">
             <button class='enter' onclick="addPost()">Enviar</button>

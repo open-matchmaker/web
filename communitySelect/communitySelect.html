@@ -1,0 +1,78 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comunidades</title>
+    <link href="../index.css" rel="stylesheet">
+    <link href="../community/community.css" rel="stylesheet">
+    <link href="../communitySelect/communitySelect.css" rel="stylesheet">
+    <script>
+        function setCommunity(title){
+            localStorage.setItem("title", title);
+            window.location.href = "../community/community.html";
+        }
+    </script>
+</head>
+
+<div class='header'>
+    <div class="logo">
+        <h1>Matchmaker</h1>
+    </div>
+    <div class="routes">
+        <nav>
+            <a href="../home/home.html">Home</a>
+            <a href="../perfil/perfil.html">Perfil</a>
+            <a href="../communitySelect/communitySelect.html">Comunidades</a>
+            <a href="../login/login.html">Login</a>
+            <a href="../register/register.html">Cadastro</a>
+        </nav>
+    </div>
+</div>
+<body>
+    <div class="container">
+        <div class="timeline">
+            <div class="timeline-container" onclick="setCommunity(document.getElementsByTagName('p')[0].innerHTML)">
+                <div class="timeline-body" id="league"> 
+                    <p style="font-weight: bolder;">
+                    League of Legends
+                    </p>
+                </div>
+            </div>
+            <div class="timeline-container" onclick="setCommunity(document.getElementsByTagName('p')[1].innerHTML)">
+                <div class="timeline-body" id="valorant"> 
+                    <p style="font-weight: bolder;">
+                    Valorant
+                    </p>
+                </div>
+            </div>
+            <div class="timeline-container" onclick="setCommunity(document.getElementsByTagName('p')[2].innerHTML)">
+                <div class="timeline-body" id="cs">  
+                    <p style="font-weight: bolder;">
+                    CS:GO
+                    </p>
+                </div>
+            </div>
+            <div class="timeline-container" onclick="setCommunity(document.getElementsByTagName('p')[3].innerHTML)">
+                <div class="timeline-body" id="dota"> 
+                    <p style="font-weight: bolder;">
+                    Dota 2
+                    </p>
+                </div>
+            </div>
+            <div class="timeline-container" onclick="setCommunity(document.getElementsByTagName('p')[4].innerHTML)">
+                <div class="timeline-body" id="ow"> 
+                    <p style="font-weight: bolder;">
+                    Overwatch
+                    </p>
+                </div>
+            </div>
+            <div class="timeline-container" onclick="setCommunity(document.getElementsByTagName('p')[5].innerHTML)">
+                <div class="timeline-body" id="apex"> 
+                    <p style="font-weight: bolder;">
+                    Apex Legends
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
