@@ -57,6 +57,11 @@ a:nth-child(5) {
 .logo {
   width: 25%;
   justify-self: flex-start;
+  background-image: url('../assets/img/logo.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
 }
 
 .routes {
