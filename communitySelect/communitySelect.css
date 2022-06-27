@@ -1,0 +1,45 @@
+#league{
+    background-image: url("../assets/img/league.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+#cs{
+    background-image: url("../assets/img/cs.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+#dota{
+    background-image: url("../assets/img/dota.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+#valorant{
+    background-image: url("../assets/img/valorant.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+   
+}
+#ow{
+    background-image: url("../assets/img/ow.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: black;
+}	
+#apex{
+    background-image: url("../assets/img/apex.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color:black;
+    
+}
+
