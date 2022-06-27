@@ -35,10 +35,12 @@ nav a:hover{
 }
 @media screen and (max-width:670px){
 .logo {
-  width: 100%;
+  width: 100% !important;
 }
 .routes {
-  width: 100%;
+  width: 100% !important;
+  align-content: center; 
+  justify-content: center;
 }
 .header {
   display: flex;
@@ -49,6 +51,7 @@ nav a:hover{
 }
 nav { 
   align-items: center;
+  margin-bottom: 2%;
 }
 
 }
@@ -70,6 +73,7 @@ a:nth-child(5){
 .logo{
   width: 25%;
   justify-self: flex-start;
+  align-items: center;
 }
 .routes{
   width: 75%;
