@@ -10,6 +10,12 @@
     <link href="home.css" rel="stylesheet">
     <link href="../index.css" rel="stylesheet">
     <title>Home</title>
+    <script>
+          function setCommunity(title){
+            localStorage.setItem("title", title);
+            window.location.href = "../community/community.html";
+        }
+    </script>
 </head>
 
 <body>
@@ -63,7 +69,7 @@
     </div> <!--about-->
     <div class="image">
         <img class="image-img" src="../assets/img/lol.png" width="100%" alt="League of Legends">
-    <a href="#" alt="" title="League of Legends">
+    <a onclick="setCommunity('League of Legends')" href="#" alt="" title="League of Legends">
         <div class="image-overlay image-overlay-blur">
         <p class="image-description">Entre já nessa comunidade!</p>
         </div> <!--image-overlay-->
