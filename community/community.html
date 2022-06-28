@@ -38,11 +38,35 @@
             postDate.className = "timeline-subtitle";
             postDate.innerHTML = 'Agora';
 
+            
+            var repliesContainer = document.createElement("div");
+            repliesContainer.className = "timeline-reply";
+            
+            var replies = document.createElement("div");
+            replies.className = "replies";
+
+            var replyField = document.createElement("input");
+            replyField.className = "reply-field";
+            replyField.type = "text";
+            replyField.placeholder = "Responder";
+            
+
+            var replyButton = document.createElement("button");
+            replyButton.className = "reply-button";
+            replyButton.innerHTML = "Responder";
+            replyButton.onclick = () => addReply();
+
+          
+            repliesContainer.appendChild(replies);
+            repliesContainer.appendChild(replyField);
+            repliesContainer.appendChild(replyButton);
+
             postTitle.appendChild(userName);
             postBody.appendChild(postTitle);
             postBody.appendChild(postText);
             postBody.appendChild(postDate);
             postContainer.appendChild(postBody);
+            postContainer.appendChild(repliesContainer);
 
             document.getElementsByClassName("timeline")[0].appendChild(postContainer);
 
@@ -103,6 +127,48 @@
 
         }
 
+        function addReply(){
+            
+            let possibleReplies = document.getElementsByClassName("reply-field").length;
+            console.log(document.getElementsByClassName("reply-field"));
+            var input;
+            for(let i = 0; i < possibleReplies; i++){
+                
+                if(document.getElementsByClassName("reply-field")[i].value.trim() !== ""){
+                    input = document.getElementsByClassName("reply-field")[i];
+                    break;
+                }
+            }
+
+            console.log(input);
+            
+            var replyBody = document.createElement("div");
+            replyBody.className = "reply-body";
+
+            var replyTitle = document.createElement("h4");
+            replyTitle.className = "reply-title";
+
+            var userName = document.createElement("span");
+            userName.className = "reply-badge";
+            userName.innerHTML = 'Arthur';
+
+            var replyText = document.createElement("p");
+            replyText.innerHTML = input.value;
+
+            var replyDate = document.createElement("p");
+            replyDate.className = "reply-subtitle";
+            replyDate.innerHTML = 'Agora';
+
+            replyTitle.appendChild(userName);
+            replyBody.appendChild(replyTitle);
+            replyBody.appendChild(replyText);
+            replyBody.appendChild(replyDate);
+         
+            console.log(input.parentElement.firstElementChild.appendChild(replyBody));
+            input.value="";
+
+        }
+
     </script>
   <div class='header'>
         <div class="logo">
@@ -136,27 +202,7 @@
             <input type="text" id=userPost class="form-field" placeholder="Fazer novo Post">
             <button class='enter' onclick="addPost()">Enviar</button>
             <div class="timeline">
-                <div class="timeline-container">
-                    <div class="timeline-body">
-                        <h4 class="timeline-title"><span class="badge">Anni</span></h4>
-                        <p>Boa tarde</p>
-                        <p class="timeline-subtitle">1 Dia Atrás</p>
-                    </div>
-                </div>
-                <div class="timeline-container">
-                    <div class="timeline-body">
-                        <h4 class="timeline-title"><span class="badge">Hans</span></h4>
-                        <p>oi</p>
-                        <p class="timeline-subtitle">7 Horas Atrás</p>
-                    </div>
-                </div>
-                <div class="timeline-container">
-                    <div class="timeline-body">
-                        <h4 class="timeline-title"><span class="badge">Pará</span></h4>
-                        <p>Olá</p>
-                        <p class="timeline-subtitle">1 Dia Atrás</p>
-                    </div>
-                </div>
+                
             </div>
 
         </div>
